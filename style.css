@@ -103,3 +103,95 @@ input {
   }
 }
 
+/* UNDERWATER DIVING SCENE */
+
+#diveScene {
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #041b2b;
+  padding: 15px;
+}
+
+.water-label {
+  color: #8bdce8;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+#underwater {
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(
+    to bottom,
+    #55c9d9 0%,
+    #167b9e 30%,
+    #08476c 65%,
+    #03172f 100%
+  );
+}
+
+.sunlight {
+  position: absolute;
+  top: -30px;
+  left: 20%;
+  width: 60%;
+  height: 180px;
+  background: radial-gradient(
+    ellipse,
+    rgba(255,255,220,0.4),
+    transparent 70%
+  );
+}
+
+#diver {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  font-size: 48px;
+  transform: translateX(-50%);
+  transition: top 2.2s cubic-bezier(.2,.7,.3,1);
+  z-index: 2;
+  filter: drop-shadow(0 5px 5px #001b2b);
+}
+
+.bubbles {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  color: #c9f7ff;
+  font-size: 32px;
+  letter-spacing: 30px;
+  opacity: 0.7;
+  animation: bubbleFloat 3s infinite linear;
+}
+
+@keyframes bubbleFloat {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-120px);
+    opacity: 0.8;
+  }
+}
+
+#rarityName {
+  color: #7ee9d2;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+#depthScore {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+#depthDescription {
+  font-size: 14px;
+}
+

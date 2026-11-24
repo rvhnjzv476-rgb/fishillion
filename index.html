@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>🎣 FISHILLION</h1>
     <p>THE DAILY FISHING CHALLENGE</p>
   </header>
 
   <main>
+
     <section class="welcome">
       <h2>Welcome to Fishillion</h2>
       <p>7 questions. 25 seconds each.</p>
@@ -21,26 +23,32 @@
       <button id="playButton">PLAY TODAY'S GAME</button>
     </section>
 
-    <input id="answer" placeholder="Type your answer..." autocomplete="off">
+    <section id="game" hidden>
+      <p id="progress">Question 1 of 7</p>
+      <p id="timer">25</p>
 
-  <button id="submitButton">SUBMIT ANSWER</button>
+      <h2 id="question"></h2>
 
-  <p id="feedback"></p>
+      <input id="answer" placeholder="Type your answer..." autocomplete="off">
 
-  <div id="diveScene" hidden>
-    <div class="water-label">UNDERWATER DEPTH</div>
+      <button id="submitButton">SUBMIT ANSWER</button>
 
-    <div id="underwater">
-      <div class="sunlight"></div>
-      <div class="bubbles">° · ° · °</div>
-      <div id="diver">🤿</div>
-    </div>
+      <p id="feedback"></p>
 
-    <h2 id="rarityName">COMMON</h2>
-    <h3 id="depthScore">10 POINTS</h3>
-    <p id="depthDescription">You are just below the surface.</p>
-  </div>
-</section>
+      <div id="diveScene" hidden>
+        <div class="water-label">UNDERWATER DEPTH</div>
+
+        <div id="underwater">
+          <div class="sunlight"></div>
+          <div class="bubbles">° · ° · °</div>
+          <div id="diver">🤿</div>
+        </div>
+
+        <h2 id="rarityName">COMMON</h2>
+        <h3 id="depthScore">10 POINTS</h3>
+        <p id="depthDescription">You are just below the surface.</p>
+      </div>
+    </section>
 
     <section id="results" hidden>
       <h2>Challenge complete!</h2>
@@ -48,9 +56,11 @@
       <p id="summary"></p>
       <button onclick="location.reload()">HOME</button>
     </section>
+
   </main>
 
   <script src="game.js"></script>
+
 </body>
 </html>
 

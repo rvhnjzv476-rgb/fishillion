@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fishillion - Daily Fishing Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎣 FISHILLION</h1>
+    <p>THE DAILY FISHING CHALLENGE</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Welcome to Fishillion</h2>
+      <p>7 questions. 25 seconds each.</p>
+      <p>Can you come up with the rarest answers?</p>
+      <button id="playButton">PLAY TODAY'S GAME</button>
+    </section>
+
+    <section id="game" hidden>
+      <p id="progress">Question 1 of 7</p>
+      <p id="timer">25</p>
+      <h2 id="question"></h2>
+      <input id="answer" placeholder="Type your answer..." autocomplete="off">
+      <button id="submitButton">SUBMIT ANSWER</button>
+      <p id="feedback"></p>
+    </section>
+
+    <section id="results" hidden>
+      <h2>Challenge complete!</h2>
+      <h1 id="score">0</h1>
+      <p id="summary"></p>
+      <button onclick="location.reload()">HOME</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
+

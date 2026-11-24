@@ -1,1 +1,105 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071c24;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: #0e3440;
+  padding: 28px 15px;
+  border-bottom: 2px solid #1b6870;
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #9bd5ce;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+main {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.welcome, #game, #results {
+  background: #10313b;
+  padding: 35px 25px;
+  border-radius: 18px;
+  border: 1px solid #28606a;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  color: #c2d9dc;
+  line-height: 1.6;
+}
+
+button {
+  background: #24a58c;
+  color: white;
+  border: none;
+  padding: 16px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #16836f;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  border-radius: 9px;
+  border: 1px solid #52818a;
+  background: #071c24;
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+#timer {
+  font-size: 35px;
+  font-weight: bold;
+  color: #61d9b6;
+}
+
+#progress {
+  color: #61d9b6;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 25px auto;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+}
+

@@ -21,14 +21,26 @@
       <button id="playButton">PLAY TODAY'S GAME</button>
     </section>
 
-    <section id="game" hidden>
-      <p id="progress">Question 1 of 7</p>
-      <p id="timer">25</p>
-      <h2 id="question"></h2>
-      <input id="answer" placeholder="Type your answer..." autocomplete="off">
-      <button id="submitButton">SUBMIT ANSWER</button>
-      <p id="feedback"></p>
-    </section>
+    <input id="answer" placeholder="Type your answer..." autocomplete="off">
+
+  <button id="submitButton">SUBMIT ANSWER</button>
+
+  <p id="feedback"></p>
+
+  <div id="diveScene" hidden>
+    <div class="water-label">UNDERWATER DEPTH</div>
+
+    <div id="underwater">
+      <div class="sunlight"></div>
+      <div class="bubbles">° · ° · °</div>
+      <div id="diver">🤿</div>
+    </div>
+
+    <h2 id="rarityName">COMMON</h2>
+    <h3 id="depthScore">10 POINTS</h3>
+    <p id="depthDescription">You are just below the surface.</p>
+  </div>
+</section>
 
     <section id="results" hidden>
       <h2>Challenge complete!</h2>
